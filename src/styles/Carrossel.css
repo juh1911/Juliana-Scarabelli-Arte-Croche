@@ -1,0 +1,266 @@
+/* src/styles/Carrossel.css */
+
+/* 🔥 CARROSSEL - TELA INTEIRA */
+.carrossel-full {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.carrossel-slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel-slide-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carrossel-background-full {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carrossel-overlay-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+.carrossel-content-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 2rem;
+  width: 80%;
+  max-width: 700px;
+}
+
+.carrossel-title-full {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.carrossel-subtitle-full {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.carrossel-btn-full {
+  display: inline-block;
+  background: #6b8c5c;
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.carrossel-btn-full:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+  transform: scale(1.05);
+}
+
+/* Botões de navegação */
+.carrossel-btn-nav-full {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carrossel-btn-nav-full:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carrossel-btn-nav-full.prev {
+  left: 2rem;
+}
+
+.carrossel-btn-nav-full.next {
+  right: 2rem;
+}
+
+/* Indicadores */
+.carrossel-dots-full {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem;
+  z-index: 10;
+}
+
+.carrossel-dot-full {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carrossel-dot-full:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.carrossel-dot-full.active {
+  background: #6b8c5c;
+  width: 36px;
+  border-radius: 9999px;
+}
+
+/* Modo escuro */
+body.dark .carrossel-overlay-full {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+body.dark .carrossel-btn-nav-full {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .carrossel-btn-nav-full:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================ */
+/* RESPONSIVO */
+/* ============================================ */
+
+@media (max-width: 1024px) {
+  .carrossel-title-full {
+    font-size: 3rem;
+  }
+
+  .carrossel-subtitle-full {
+    font-size: 1.1rem;
+  }
+
+  .carrossel-btn-nav-full {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carrossel-title-full {
+    font-size: 2.2rem;
+  }
+
+  .carrossel-subtitle-full {
+    font-size: 0.95rem;
+  }
+
+  .carrossel-content-full {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .carrossel-btn-full {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .carrossel-btn-nav-full {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carrossel-btn-nav-full.prev {
+    left: 0.75rem;
+  }
+
+  .carrossel-btn-nav-full.next {
+    right: 0.75rem;
+  }
+
+  .carrossel-dots-full {
+    bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrossel-title-full {
+    font-size: 1.6rem;
+  }
+
+  .carrossel-subtitle-full {
+    font-size: 0.85rem;
+  }
+
+  .carrossel-content-full {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .carrossel-btn-full {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .carrossel-btn-nav-full {
+    width: 34px;
+    height: 34px;
+  }
+
+  .carrossel-btn-nav-full svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .carrossel-dot-full {
+    width: 10px;
+    height: 10px;
+  }
+
+  .carrossel-dot-full.active {
+    width: 28px;
+  }
+}
