@@ -38,7 +38,6 @@ body.dark .loja-subtitle {
   color: #b9a88c;
 }
 
-/* Filtros */
 .filtros {
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +90,6 @@ body.dark .filtro-btn {
   color: white;
 }
 
-/* Loading */
 .loja-loading {
   min-height: 60vh;
   display: flex;
@@ -114,7 +112,6 @@ body.dark .filtro-btn {
   to { transform: rotate(360deg); }
 }
 
-/* Grid de Produtos */
 .produtos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -128,9 +125,6 @@ body.dark .filtro-btn {
   }
 }
 
-/* ============================================
-   CARD DO PRODUTO - SEM FUNDO BRANCO
-   ============================================ */
 .produto-card {
   background: transparent;
   border-radius: 12px;
@@ -146,7 +140,6 @@ body.dark .filtro-btn {
   transform: translateY(-4px);
 }
 
-/* Imagem do card */
 .produto-imagem {
   position: relative;
   aspect-ratio: 1 / 1;
@@ -177,9 +170,6 @@ body.dark .produto-imagem {
   font-size: 2rem;
 }
 
-/* ============================================
-   BADGES - CANTO SUPERIOR ESQUERDO
-   ============================================ */
 .badges-container {
   position: absolute;
   top: 0.75rem;
@@ -190,7 +180,6 @@ body.dark .produto-imagem {
   z-index: 10;
 }
 
-/* Badge de PROMOÇÃO */
 .promo-badge {
   background: #e74c3c;
   color: white;
@@ -206,7 +195,6 @@ body.dark .produto-imagem {
   width: fit-content;
 }
 
-/* Badge de ÚLTIMAS PEÇAS */
 .ultimas-pecas-badge {
   background: #e67e22;
   color: white;
@@ -237,9 +225,6 @@ body.dark .ultimas-pecas-badge {
   }
 }
 
-/* ============================================
-   INFORMAÇÕES - SEM FUNDO BRANCO, TEXTO MENOR
-   ============================================ */
 .produto-info {
   padding: 0.75rem 0.25rem 0.25rem;
   flex: 1;
@@ -308,9 +293,6 @@ body.dark .produto-nome {
   color: #8b6f4e;
 }
 
-/* ============================================
-   RESPONSIVO
-   ============================================ */
 @media (max-width: 768px) {
   .loja-title {
     font-size: 2rem;
