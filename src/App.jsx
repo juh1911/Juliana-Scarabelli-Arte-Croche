@@ -21,7 +21,7 @@ import ResetarSenha from './Pages/ResetarSenha'
 import ConfirmarEmail from './Pages/ConfirmarEmail'
 import Perfil from './Pages/Perfil'
 import AdminRoute from './components/AdminRoute'
-
+import './styles/App.css'
 import './styles/Navbar.css'
 import './styles/Footer.css'
 

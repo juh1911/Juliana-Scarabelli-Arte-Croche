@@ -60,9 +60,12 @@ body.dark .table-container td {
   border-color: #2a2a2a;
 }
 
+/* ❌ REMOVIDO O SELETOR VAZIO AQUI */
+/* O código abaixo foi removido porque era um seletor vazio:
 {
   background: #0d0d0d;
 }
+*/
 
 body.dark .produto-card,
 body.dark .pedido-card,
@@ -78,10 +81,13 @@ body.dark .table-container td {
   border-color: #2a2a2a;
 }
 
+/* ❌ REMOVIDO OUTRO SELETOR VAZIO AQUI */
+/* O código abaixo foi removido porque era um seletor vazio:
 {
   background: #1a1a1a;
   border-color: #2a2a2a;
 }
+*/
 
 body.dark .produto-info {
   background: rgba(26, 26, 26, 0.95);
