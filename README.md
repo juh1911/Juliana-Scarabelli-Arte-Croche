@@ -142,6 +142,7 @@ O projeto foi desenvolvido como trabalho de conclusão de curso, com o objetivo 
 ---
 
 👥 Autores
+
 Julia Scarabelli Oliveira de Souza
 
 Isadora Ferreira Martins
