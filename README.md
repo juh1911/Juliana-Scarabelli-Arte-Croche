@@ -1,20 +1,11 @@
-# 🧶 Juliana Scarabelli Crochê
+#  Ju Scarabelli Crochê
 
 <div align="center">
-  <img src="https://via.placeholder.com/1200x400/FAF8F5/2d4a2c?text=Juliana+Scarabelli+Croch%C3%AA" alt="Juliana Scarabelli Crochê Banner" width="100%"/>
+  <img src="https://github.com/juh1911/Juliana-Scarabelli-Arte-e-Croche/blob/main/public/fundo-home.jpg?raw=true" alt="Juliana Scarabelli Crochê Banner" width="100%" style="border-radius: 12px;"/>
   
   <p>
     <strong>E-commerce de produtos artesanais em crochê</strong><br/>
     Peças únicas feitas com amor e dedicação em cada ponto.
-  </p>
-  
-  <p>
-    <a href="https://juliana-scarabelli-arte-e-croche.vercel.app" target="_blank">
-      <img src="https://img.shields.io/badge/🌐-Acessar_Site-6b8c5c?style=for-the-badge" alt="Acessar Site"/>
-    </a>
-    <a href="https://github.com/juh1911/Juliana-Scarabelli-Arte-e-Croche" target="_blank">
-      <img src="https://img.shields.io/badge/📂-Ver_Código-6b8c5c?style=for-the-badge" alt="Ver Código"/>
-    </a>
   </p>
 </div>
 
@@ -66,8 +57,101 @@ O projeto foi desenvolvido como trabalho de conclusão de curso, com o objetivo 
 ### APIs e Serviços
 - **ViaCEP** - Busca automática de endereços por CEP
 - **Vercel** - Hospedagem do site
-- **GitHub** - Controle de versão
 
 ---
 
 ## 📁 Estrutura do Projeto
+
+📁 src/
+├── 📁 components/
+│ ├── Navbar.jsx # Menu de navegação
+│ ├── Footer.jsx # Rodapé
+│ ├── AdminRoute.jsx # Rota protegida admin
+│ └── ...
+├── 📁 contexts/
+│ ├── Authcontext.jsx # Contexto de autenticação
+│ └── CartContext.jsx # Contexto do carrinho
+├── 📁 pages/
+│ ├── Home.jsx # Página inicial
+│ ├── Loja.jsx # Catálogo de produtos
+│ ├── Produto.jsx # Detalhes do produto
+│ ├── Carrinho.jsx # Carrinho de compras
+│ ├── Checkout.jsx # Finalização da compra
+│ ├── Login.jsx # Login
+│ ├── Cadastro.jsx # Cadastro de usuário
+│ ├── Perfil.jsx # Perfil do usuário
+│ ├── MeusPedidos.jsx # Histórico de pedidos
+│ ├── Admin.jsx # Painel administrativo
+│ ├── AdminProduto.jsx # Gerenciar produtos
+│ └── ...
+├── 📁 services/
+│ └── supabase.js # Configuração do Supabase
+├── 📁 styles/
+│ ├── App.css # Estilos globais
+│ ├── Navbar.css # Estilos do menu
+│ ├── Loja.css # Estilos da loja
+│ ├── Login.css # Estilos do login
+│ └── ...
+└── 📄 main.jsx # Ponto de entrada
+
+📁 public/
+├── 📁 images/ # Imagens estáticas
+└── 📄 favicon.ico
+
+📄 vercel.json # Configuração Vercel
+📄 package.json
+📄 vite.config.js
+📄 .env # Variáveis de ambiente
+📄 README.md
+
+
+---
+
+## 🛠️ Funcionalidades
+
+### 👤 Usuário
+- **Cadastro:** Criação de conta com validação de senha forte
+- **Login:** Autenticação com e-mail e senha
+- **Perfil:** Edição de dados pessoais
+- **Meus Pedidos:** Histórico completo de compras
+
+### 🛍️ Loja
+- **Catálogo:** Grid de produtos com imagens, preços e categorias
+- **Filtros:** Por categoria (Decoração, Chaveiros, Bolsas, Vestuário)
+- **Busca:** Pesquisa por nome do produto
+- **Detalhes:** Página com informações completas do produto
+- **Avaliações:** Sistema de avaliação com estrelas
+
+### 🛒 Carrinho
+- **Adicionar/Remover:** Controle de quantidade
+- **Persistência:** Salva itens mesmo ao fechar o navegador
+- **Cupons:** Aplicação de cupons de desconto
+- **Resumo:** Cálculo automático de subtotal e total
+
+### 📦 Checkout
+- **Endereço:** Busca automática de CEP via ViaCEP
+- **Resumo:** Visualização do pedido antes da finalização
+- **Confirmação:** Número de pedido e resumo após finalizar
+
+### 🔧 Admin
+- **Dashboard:** Estatísticas de vendas, produtos e clientes
+- **Produtos:** CRUD completo com upload de imagens
+- **Pedidos:** Visualização e alteração de status
+- **Clientes:** Lista de usuários cadastrados
+
+---
+
+👥 Autores
+Julia Scarabelli Oliveira de Souza
+
+Isadora Ferreira Martins
+
+📄 Licença
+Este projeto é de uso acadêmico e está sob a licença MIT.
+
+🙏 Agradecimentos
+Senai Distrito Federal - Pelo apoio e estrutura
+
+Orientadores - Pela orientação e suporte
+
+Familiares - Pelo incentivo e compreensão
