@@ -78,6 +78,13 @@ function Navbar() {
         </button>
       </div>
 
+      {/* ============================================
+      OVERLAY PARA FECHAR O MENU (CLICAR FORA)
+      ============================================ */}
+      {menuAberto && (
+        <div className="menu-overlay" onClick={fecharMenu} />
+      )}
+
       <AnimatePresence>
         {menuAberto && (
           <motion.div

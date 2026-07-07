@@ -110,6 +110,7 @@ function Carrossel() {
         </AnimatePresence>
       </div>
 
+      {/* Botões de navegação - SETAS */}
       <button className="carrossel-btn-nav-full prev" onClick={prevSlide}>
         <ChevronLeft size={32} />
       </button>
@@ -117,15 +118,7 @@ function Carrossel() {
         <ChevronRight size={32} />
       </button>
 
-      <div className="carrossel-dots-full">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`carrossel-dot-full ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
+      {/* ❌ BOLINHAS REMOVIDAS - NÃO COLOCAR NADA AQUI */}
     </div>
   )
 }
